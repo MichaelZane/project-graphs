@@ -200,7 +200,7 @@ class Graph:
         curr_path = curr_path + [starting_vertex]
         visited.add(starting_vertex)
         
-        if destination_vertex == starting_vertex:
+        if starting_vertex == destination_vertex:
             return curr_path
         
         for next_v in self.get_neighbors(starting_vertex):
